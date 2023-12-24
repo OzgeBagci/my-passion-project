@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Basics</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+        color: #6a2604;
+      }
+
+      h2 {
+        text-align: center;
+        color: #b06427;
+        border: 1px solid #bc7b47;
+        padding: 25px;
+        margin: 0px auto 40px auto;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 4px;
+        border-width: 100%;
+        max-width: 100%;
+        display: block;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        max-width: 100%;
+      }
+      p {
+        text-align: center;
+        line-height: 1.5;
+        font-size: 16px;
+      }
+      button {
+        margin: 0 auto;
+        display: block;
+        background: #6a2604;
+        color: white;
+        font-size: 19px;
+        padding: 15px 20px;
+        border-radius: 8px;
+        border: none;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+        transition: all 190ms ease-in-out;
+      }
+
+      button:hover {
+        color: #6a2604;
+        color: white;
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .Wikipedia {
+        display: block;
+        margin-top: 15px;
+        text-decoration: none;
+        color: #b06427;
+        font-size: 15px;
+      }
+
+      .Wikipedia:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .getSome {
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .create:hover {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Turkish coffee</h1>
+      <h2>The taste you won't forget</h2>
+      <hr />
+      <span>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/099/839/original/turkish_coffee.jpg?1696958459"
+          alt="Turkish coffee"
+          width="500px"
+        />
+      </span>
+      <hr />
+      <p>
+        "Turkish coffee is an ancient brewing method of coffee, which is still
+        used in many places in the Middle East, Africa, Turkey, the Balkans,
+        Romania and Greece."
+        <br />
+        <a
+          href="https://en.wikipedia.org/wiki/Turkish_coffee"
+          target="_blank"
+          class="Wikipedia"
+        >
+          Learn more on Wikipedia
+        </a>
+      </p>
+      <p class="getSome">
+        <em>
+          <strong> Want to try some Turkish coffee?</strong>
+        </em>
+      </p>
+      <button>Get the recipe! ☕</button>
+      <br />
+      <p class="create">This page was created by Øzge Bagci</p>
+      <script>
+        function getRecipe() {
+          let name = prompt("What is your name?");
+          let email = prompt("What is your email address?");
+          let age = prompt("How old are you?");
+          if (age > 18) {
+            alert("Enjoy your coffee," + " " + name + "!😍");
+          } else {
+            if (age < 15) {
+              alert("Try getting some help making it," + " " + name + "😊");
+            }
+          }
+        }
+        let getButton = document.querySelector("button");
+        getButton.addEventListener("click", getRecipe);
+      </script>
+    </div>
+  </body>
+</html>
