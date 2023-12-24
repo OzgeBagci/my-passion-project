@@ -58,7 +58,7 @@
         opacity: 0.9;
         cursor: pointer;
       }
-      .Wikipedia {
+      .wikipedia {
         display: block;
         margin-top: 15px;
         text-decoration: none;
@@ -66,7 +66,7 @@
         font-size: 15px;
       }
 
-      .Wikipedia:hover {
+      .wikipedia:hover {
         text-decoration: underline;
         cursor: pointer;
       }
@@ -74,8 +74,15 @@
         text-align: center;
         font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
       }
-      .create:hover {
+      .create {
         text-align: center;
+        font-size: 14px;
+        color: black;
+      }
+      .create a {
+        font-size: 14px;
+        text-align: center;
+        color: #6a2604;
       }
     </style>
   </head>
@@ -100,7 +107,7 @@
         <a
           href="https://en.wikipedia.org/wiki/Turkish_coffee"
           target="_blank"
-          class="Wikipedia"
+          class="wikipedia"
         >
           Learn more on Wikipedia
         </a>
@@ -112,7 +119,21 @@
       </p>
       <button>Get the recipe! ☕</button>
       <br />
-      <p class="create">This page was created by Øzge Bagci</p>
+      <footer class="create">
+        This project was coded by
+        <a href="https://github.com/OzgeBagci" target="_blank">Øzge Bagci</a>
+        and is
+        <a
+          href="https://github.com/OzgeBagci/my-passion-project"
+          target="_blank"
+        >
+          open-sourced on GitHub</a
+        >
+        and
+        <a href="https://my-passion-project.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
       <script>
         function getRecipe() {
           let name = prompt("What is your name?");
